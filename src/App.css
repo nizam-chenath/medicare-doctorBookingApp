@@ -10,4 +10,5 @@ body{
   font-family: 'Manrope', sans-serif;
   background-color: #b3b3b3;
   padding: 30px 50px;
+  scroll-behavior: smooth;
 }
