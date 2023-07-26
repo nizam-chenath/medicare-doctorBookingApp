@@ -1,8 +1,13 @@
 .nav-container {
-  display: flex;
-  gap: 100px;
+    display: grid;
+    grid-template-columns: 1fr 2fr 0.5fr 0.5fr 0.4fr;
+  .logo-img{
+    display: grid;
+    align-items: center;
+  }
   .navigation {
     display: flex;
+
     .nav-items {
       display: flex;
       gap: 10px;
@@ -48,8 +53,14 @@
     }
    
   }
+  .hamburger{
+    display: grid;
+    place-content: center;
+    visibility: hidden;
+  }
   .profile{
-    right: 0;
+    display: grid;
+    place-content: center;
   }
   .profile img{
     width: 40px;
@@ -58,4 +69,56 @@
     margin-right: 10px;
     object-fit: cover;
   }
+  .login-btn{
+    display: grid;
+    place-content: center;
+    button{
+        padding: 6px 30px;
+    color: white;
+    border-radius: 5px;
+    border: 1px solid rgb(255, 255, 255);
+    background: #0066cc;
+    }
+  }
+}
+
+@media screen and (max-width: 888px) {
+    .nav-container{
+        .navigation{
+            .nav-items {
+                display: none; /* Hide the nav-items on mobile view */
+              }
+              .nav-items.active{
+                display: flex;
+                flex-direction: column;
+                position: absolute;
+                top: 200px;
+                right: 0;
+                width: 30%;
+                height: 50%;
+                
+                gap: 30px;
+                background: #ad1010;
+            
+              }
+            
+              
+            
+              .navigation.active {
+                display: flex; /* Show the nav-items when the hamburger button is clicked */
+                flex-direction: column; /* Display the navigation items in a column */
+              }
+              
+        }
+        
+        .hamburger{
+            visibility: visible ; /* Show the hamburger button on mobile view */
+            svg{
+                width: 25px;
+                height: 25px;
+                color: #0066cc;
+            }
+          }
+    }
+   
 }

@@ -3,6 +3,8 @@ import logo from "../../assets/images/logo.png";
 import profile from "../../assets/images/profile.jpeg"
 import { Link, NavLink} from "react-router-dom"
 import '../../styles/Header.scss'
+import { FaBars, FaCross } from 'react-icons/fa'; // Import the Font Awesome hamburger icon
+
 
 const navLinks = [
     {
@@ -30,6 +32,11 @@ const Header = () => {
     const handleNavClick = (index) =>{
         setActiveNav(index)
     }
+    const [isMobileNavOpen, setMobileNavOpen] = useState(false);
+
+  const toggleMobileNav = () => {
+    setMobileNavOpen(!isMobileNavOpen);
+  };
   return (
     <header>
         <div className="container">
@@ -37,8 +44,8 @@ const Header = () => {
                 <div className="logo-img">
                     <img src={logo} alt="" width={100}/>
                 </div>
-                <div className="navigation">
-                    <ul className="nav-items">
+                <div className={`navigation ${isMobileNavOpen ? 'active' : ''}`}>
+                <ul className={`nav-items ${isMobileNavOpen ? 'active' : ''}`}>
                          {navLinks.map((item, i) => <li key={i} className={activeNav === i ? 'active' : ''} onClick={() => handleNavClick(i)} style={{color: "black"}}>
                                 <NavLink to={item.path} > {item.display}</NavLink>
                             </li>
@@ -46,7 +53,20 @@ const Header = () => {
                     </ul>
                 </div>
                 <div className="profile">
+                    <Link to="/">
+
                     <img src={profile} alt="profile" />
+                    </Link>
+                </div>
+                <div className="login-btn">
+                    <Link to="/login">
+
+                    <button>Login</button>
+                    </Link>
+                </div>
+                <div className="hamburger" onClick={toggleMobileNav}>
+                    {isMobileNavOpen ? <FaCross /> : <FaBars/>}
+                
                 </div>
             </div>
         </div>
