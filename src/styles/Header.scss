@@ -1,0 +1,61 @@
+.nav-container {
+  display: flex;
+  gap: 100px;
+  .navigation {
+    display: flex;
+    .nav-items {
+      display: flex;
+      gap: 10px;
+      list-style: none;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .nav-items li {
+      /* Add some styling to each list item */
+
+      padding: 10px 30px;
+
+      a {
+        color: white;
+        transition: background-color 0.9s ease-in-out;
+        font-size: 1rem;
+        font-weight: bold;
+      }
+    }
+    .nav-items li.active {
+      border-radius: 20px;
+      background-color: #ddd;
+      transform: scale(1.05);
+      a {
+        color: #0066cc;
+      }
+    }
+
+    .nav-items li a:hover {
+      /* Add hover effect */
+    }
+
+    .nav-items a {
+      /* Add styles for anchor tags within list items */
+      text-decoration: none;
+      color: #333;
+    }
+
+    /* If you want to change the style of the links on hover */
+    .nav-items a:hover {
+      color: #0066cc;
+    }
+   
+  }
+  .profile{
+    right: 0;
+  }
+  .profile img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+    object-fit: cover;
+  }
+}
