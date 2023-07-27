@@ -2,7 +2,13 @@ import React from 'react'
 import doctor6 from "../assets/images/doctor6.jpeg"
 import doctor3 from "../assets/images/doctor3.jpeg"
 import doctor4 from "../assets/images/doctor4.jpeg"
-import "../styles/Hero.scss"
+import doctor from "../assets/images/doctor.png"
+import search from "../assets/images/search.png"
+import booking from "../assets/images/booking.png"
+import "../styles/Home.scss"
+import {  FaArrowAltCircleRight } from 'react-icons/fa'
+import About from '../components/about/About'
+import ServicesList from '../components/services/ServicesList'
 
 const Home = () => {
   return (
@@ -47,6 +53,58 @@ const Home = () => {
               </div>
             </div>
         </div>
+    </section>
+    <section className="hero-content-section">
+        <div className="content-container">
+            <div className="content-heading">
+                <div className='grid-center'>
+
+                <h2>Providing the best medical services</h2>
+                </div>
+                <p className='para-content-section'>World class care for everyone. Our health system offerd unmatched,
+                    expert health care.
+                </p>
+            </div>
+            <div className="content-boxes">
+                <div className="box1">
+                    <div className="box-icon"><img src={doctor} alt="" /></div>
+                    <div className="box-heading">Find a Doctor</div>
+                    <div className="box-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. At, commodi?</div>
+                    <div className="box-arrow-icon"><FaArrowAltCircleRight/></div>
+                </div>
+                <div className="box1">
+                    <div className="box-icon"><img src={search} alt="" /></div>
+                    <div className="box-heading">Find a Location</div>
+                    <div className="box-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. At, commodi?</div>
+                    <div className="box-arrow-icon"><FaArrowAltCircleRight/></div>
+                </div>
+                <div className="box1">
+                    <div className="box-icon"><img src={booking} alt="" /></div>
+                    <div className="box-heading">Book Appointment</div>
+                    <div className="box-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. At, commodi?</div>
+                    <div className="box-arrow-icon"><FaArrowAltCircleRight/></div>
+                </div>
+                
+                
+            </div>
+        </div>
+    </section>
+    <About/>
+    <section className="service-section">
+        <div className="content-container">
+        <div className="content-heading">
+                <div className='grid-center'>
+
+                <h2>Our medical services</h2>
+                </div>
+                <p className='para-content-section'>World class care for everyone. Our health system offerd unmatched,
+                    expert health care.
+                </p>
+            </div>
+            <ServicesList/>
+
+        </div>
+    
     </section>
     </>
   )

@@ -1,0 +1,42 @@
+ [
+      {
+        "name": "Cardiology",
+        "description": "Cardiology is the branch of medicine that deals with the study, diagnosis, and treatment of heart-related diseases and disorders."
+      },
+      {
+        "name": "Dermatology",
+        "description": "Dermatology is the branch of medicine that focuses on the diagnosis and treatment of skin, hair, and nail conditions."
+      },
+      {
+        "name": "Ophthalmology",
+        "description": "Ophthalmology is the branch of medicine that deals with the study and treatment of eye diseases and disorders."
+      },
+      {
+        "name": "Orthopedics",
+        "description": "Orthopedics is the branch of medicine that deals with the musculoskeletal system, including bones, muscles, joints, ligaments, and tendons."
+      },
+      {
+        "name": "Gastroenterology",
+        "description": "Gastroenterology is the branch of medicine that focuses on the study and treatment of digestive system disorders and diseases."
+      },
+      {
+        "name": "Neurology",
+        "description": "Neurology is the branch of medicine that deals with the study and treatment of diseases and disorders of the nervous system."
+      },
+      {
+        "name": "Pediatrics",
+        "description": "Pediatrics is the branch of medicine that focuses on the medical care of infants, children, and adolescents."
+      },
+      {
+        "name": "Obstetrics and Gynecology",
+        "description": "Obstetrics and Gynecology is the branch of medicine that deals with pregnancy, childbirth, and female reproductive health."
+      },
+      {
+        "name": "Psychiatry",
+        "description": "Psychiatry is the branch of medicine that deals with the diagnosis, treatment, and prevention of mental, emotional, and behavioral disorders."
+      },
+      {
+        "name": "Radiology",
+        "description": "Radiology is the branch of medicine that uses medical imaging technologies like X-rays, MRI, and CT scans to diagnose and treat diseases."
+      }
+    ]
