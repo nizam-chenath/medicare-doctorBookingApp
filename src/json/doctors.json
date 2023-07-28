@@ -1,0 +1,94 @@
+ [
+      {
+        "id": 1,
+        "name": "Dr. John Smith",
+        "specialization": "Cardiologist",
+        "hospital": "City Hospital",
+        "total_patients": 200,
+        "rating": 4.8,
+        "photo": "https://images.unsplash.com/photo-1582750433449-648ed127bb54?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTgwOTN8MHwxfHNlYXJjaHwyfHxkb2N0b3IlMjBwaG90b3xlbnwwfHx8fDE2OTA1MTgyMjh8MA&ixlib=rb-4.0.3&q=80&w=1080"
+      },
+      {
+        "id": 2,
+        "name": "Dr. Emily Johnson",
+        "specialization": "Pediatrician",
+        "hospital": "Children's Hospital",
+        "total_patients": 350,
+        "rating": 4.9,
+        "photo": "https://img.freepik.com/free-photo/pleased-young-female-doctor-wearing-medical-robe-stethoscope-around-neck-standing-with-closed-posture_409827-254.jpg"
+      },
+      {
+        "id": 3,
+        "name": "Dr. Michael Brown",
+        "specialization": "Dermatologist",
+        "hospital": "Skin Clinic",
+        "total_patients": 120,
+        "rating": 4,
+        "photo": "https://images.theconversation.com/files/304957/original/file-20191203-66986-im7o5.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=1200&h=1200.0&fit=crop"
+      },
+      {
+        "id": 4,
+        "name": "Dr. Sarah Miller",
+        "specialization": "Orthopedic Surgeon",
+        "hospital": "Joint Hospital",
+        "total_patients": 300,
+        "rating": 4.7,
+        "photo": "https://img.freepik.com/premium-photo/young-doctor-working-office_101945-93.jpg?size=626&ext=jpg&ga=GA1.2.334219292.1690518394&semt=sph"
+      },
+      {
+        "id": 5,
+        "name": "Dr. Jessica Lee",
+        "specialization": "Gynecologist",
+        "hospital": "Women's Health Clinic",
+        "total_patients": 250,
+        "rating": 4.6,
+        "photo": "https://img.freepik.com/premium-photo/woman-white-lab-coat-with-stethoscope-her-neck-stands-hospital_889227-23106.jpg?size=626&ext=jpg&ga=GA1.2.334219292.1690518394&semt=sph"
+      },
+      {
+        "id": 6,
+        "name": "Dr. David Anderson",
+        "specialization": "Neurologist",
+        "hospital": "Brain Institute",
+        "total_patients": 180,
+        "rating": 3.4,
+        "photo": "https://img.freepik.com/free-photo/portrait-smiling-handsome-male-doctor-man_171337-5055.jpg?size=626&ext=jpg&ga=GA1.2.334219292.1690518394&semt=sph"
+      },
+      {
+        "id": 7,
+        "name": "Dr. Jennifer Roberts",
+        "specialization": "Oncologist",
+        "hospital": "Cancer Center",
+        "total_patients": 280,
+        "rating": 4.1,
+        "photo": "https://img.freepik.com/free-photo/pleased-young-female-doctor-wearing-medical-robe-stethoscope-around-neck-standing-with-closed-posture_409827-254.jpg?size=626&ext=jpg&ga=GA1.2.334219292.1690518394&semt=sph"
+      },
+      {
+        "id": 8,
+        "name": "Dr. William Clark",
+        "specialization": "ENT Specialist",
+        "hospital": "Ears & Throat Clinic",
+        "total_patients": 150,
+        "rating": 3.6,
+        "photo": "https://img.freepik.com/premium-photo/confident-pretty-middle-aged-female-doctor_1262-10444.jpg?size=626&ext=jpg&ga=GA1.1.334219292.1690518394&semt=sph"
+      },
+      {
+        "id": 9,
+        "name": "Dr. Elizabeth Turner",
+        "specialization": "Psychiatrist",
+        "hospital": "Mind Wellness Center",
+        "total_patients": 220,
+        "rating": 4.9,
+        "photo": "https://img.freepik.com/free-photo/portrait-hansome-young-male-doctor-man_171337-5068.jpg?size=626&ext=jpg&ga=GA1.1.334219292.1690518394&semt=sph"
+      },
+      {
+        "id": 10,
+        "name": "Dr. Andrew Wilson",
+        "specialization": "Urologist",
+        "hospital": "Urinary Health Clinic",
+        "total_patients": 190,
+        "rating": 4,
+        "photo": "https://img.freepik.com/free-photo/image-professional-woman-doctor-physician-with-clipboard-writing-listening-patient-hospital-cl_1258-87691.jpg?size=626&ext=jpg&ga=GA1.1.334219292.1690518394&semt=sph"
+      }
+    ]
+  
+  

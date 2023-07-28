@@ -1,4 +1,3 @@
-import React from 'react'
 import { FaArrowAltCircleRight } from 'react-icons/fa'
 
 const ServicesCard = ({data,index}) => {

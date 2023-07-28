@@ -1,16 +1,26 @@
-import React from 'react'
+import React , {useState}from 'react'
 import doctor6 from "../assets/images/doctor6.jpeg"
 import doctor3 from "../assets/images/doctor3.jpeg"
 import doctor4 from "../assets/images/doctor4.jpeg"
 import doctor from "../assets/images/doctor.png"
 import search from "../assets/images/search.png"
 import booking from "../assets/images/booking.png"
+import faqdoctor from "../assets/images/faqdoctor.jpeg"
 import "../styles/Home.scss"
 import {  FaArrowAltCircleRight } from 'react-icons/fa'
 import About from '../components/about/About'
 import ServicesList from '../components/services/ServicesList'
+import Feature from '../components/feature/Feature'
+import DoctorList from '../components/doctors/DoctorList'
+import faqData from "../json/faqData.js"
 
 const Home = () => {
+    const [activeId, setActiveId] = useState(null);
+
+    const handleQuestionClick = (id) => {
+      setActiveId(id === activeId ? null : id);
+    };
+  
   return (
     <>
     {/* ======= hero section ========== */}
@@ -54,7 +64,7 @@ const Home = () => {
             </div>
         </div>
     </section>
-    <section className="hero-content-section">
+    <div className="hero-content-section">
         <div className="content-container">
             <div className="content-heading">
                 <div className='grid-center'>
@@ -88,9 +98,9 @@ const Home = () => {
                 
             </div>
         </div>
-    </section>
+    </div>
     <About/>
-    <section className="service-section">
+    <div className="service-section">
         <div className="content-container">
         <div className="content-heading">
                 <div className='grid-center'>
@@ -105,6 +115,46 @@ const Home = () => {
 
         </div>
     
+    </div>
+    <section className="feature">
+        <Feature/>
+    </section>
+    <section>
+        <div className="doctor-container">
+
+    <div className="doctor-heading">
+                <div className='grid-center'>
+
+                <h2>Our great Doctors</h2>
+                </div>
+                <p className='para-doctor-section'>World class care for everyone. Our health system offerd unmatched,
+                    expert health care.
+                </p>
+            </div>
+            <DoctorList/>
+
+        </div>
+    </section>
+    <section>
+        <div className="faq-section">
+            <div className="faq-img">
+                <img src={faqdoctor} alt="" />
+            </div>
+            <div className="faq-question-section">
+            <h2>Frequently Asked Questions</h2>
+      {faqData.map((faq) => (
+        <div key={faq.id} className="faq-item">
+          <div
+            className={`question ${faq.id === activeId ? "active" : ""}`}
+            onClick={() => handleQuestionClick(faq.id)}
+          >
+            {faq.question}
+          </div>
+          {faq.id === activeId && <div className="answer">{faq.answer}</div>}
+        </div>
+      ))}
+            </div>
+        </div>
     </section>
     </>
   )
