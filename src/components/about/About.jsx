@@ -15,7 +15,7 @@ const About = () => {
         </div>
         <div className="about-right">
             <div className="heading">Proud to be one of the nations best</div>
-            <div className="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, atque? Sequi quis nesciunt, aliquid provident eligendi molestiae pariatur ipsa modi nostrum error hic ex, illo, temporibus impedit nobis magnam perspiciatis velit amet laborum non eum consequatur inventore possimus quia. Debitis ea accusamus sit? Veritatis.</div>
+            <div className="paragraph">We take pride in being recognized as one of the best in the industry. With a commitment to excellence, Lorem ipsum dolor sit amet consectetur adipisicing elit. Our dedicated team and exceptional services set us apart, ensuring your health and satisfaction.</div>
             <div className="button"><button>Learn More</button></div>
 
             

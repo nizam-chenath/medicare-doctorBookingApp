@@ -41,7 +41,7 @@ const Home = () => {
                 We help patients live a healthy, longer life.
                </div>
                <div className="para-content">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate similique cumque debitis velit totam eius amet, officia tenetur ratione dolores, sit, atque possimus eos quos soluta veniam dicta eligendi dolor vitae nemo tempora cum!</p>
+                <p>Welcome to our premier medical center, where we provide expert healthcare services, compassionate treatment, and state-of-the-art facilities. Our team of skilled professionals is dedicated to ensuring your well-being and long-lasting health.</p>
                </div>
                <div className="btn-section">
                 <button onClick={handleButtonClick}>Medical services</button>
@@ -88,19 +88,19 @@ const Home = () => {
                 <div className="box1">
                     <div className="box-icon"><img src={doctor} alt="" /></div>
                     <div className="box-heading">Find a Doctor</div>
-                    <div className="box-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. At, commodi?</div>
+                    <div className="box-content">Discover dedicated medical professionals at our premier center</div>
                     <div className="box-arrow-icon"><FaArrowAltCircleRight/></div>
                 </div>
                 <div className="box1">
                     <div className="box-icon"><img src={search} alt="" /></div>
                     <div className="box-heading">Find a Location</div>
-                    <div className="box-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. At, commodi?</div>
+                    <div className="box-content">Explore our convenient medical locations for accessible and comprehensive care.</div>
                     <div className="box-arrow-icon"><FaArrowAltCircleRight/></div>
                 </div>
                 <div className="box1">
                     <div className="box-icon"><img src={booking} alt="" /></div>
                     <div className="box-heading">Book Appointment</div>
-                    <div className="box-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. At, commodi?</div>
+                    <div className="box-content">Effortlessly book an appointment with our esteemed medical team .</div>
                     <div className="box-arrow-icon"><FaArrowAltCircleRight/></div>
                 </div>
                 
