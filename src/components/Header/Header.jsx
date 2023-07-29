@@ -3,8 +3,8 @@ import logo from "../../assets/images/logo.png";
 import profile from "../../assets/images/profile.jpeg"
 import { Link, NavLink} from "react-router-dom"
 import '../../styles/Header.scss'
-import { FaBars, FaCross } from 'react-icons/fa'; // Import the Font Awesome hamburger icon
-
+import { FaBars, } from 'react-icons/fa'; // Import the Font Awesome hamburger icon
+import {RxCrossCircled} from 'react-icons/rx'
 
 const navLinks = [
     {
@@ -20,8 +20,8 @@ const navLinks = [
         display: "Services"
     },
     {
-        path: "/contact",
-        display: "Contact"
+        path: "/faq",
+        display: "Faq"
     }
 ]
 
@@ -46,8 +46,8 @@ const Header = () => {
                 </div>
                 <div className={`navigation ${isMobileNavOpen ? 'active' : ''}`}>
                 <ul className={`nav-items ${isMobileNavOpen ? 'active' : ''}`}>
-                         {navLinks.map((item, i) => <li key={i} className={activeNav === i ? 'active' : ''} onClick={() => handleNavClick(i)} style={{color: "black"}}>
-                                <NavLink to={item.path} > {item.display}</NavLink>
+                         {navLinks.map((item, i) => <li key={i} className={activeNav === i ? 'active' : ''} >
+                                <NavLink to={item.path} onClick={() => handleNavClick(i)} style={{color: "black"}}> {item.display}</NavLink>
                             </li>
                             )}
                     </ul>
@@ -65,7 +65,7 @@ const Header = () => {
                     </Link>
                 </div>
                 <div className="hamburger" onClick={toggleMobileNav}>
-                    {isMobileNavOpen ? <FaCross /> : <FaBars/>}
+                    {isMobileNavOpen ? <RxCrossCircled/> : <FaBars/>}
                 
                 </div>
             </div>

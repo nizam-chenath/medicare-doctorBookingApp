@@ -94,13 +94,14 @@
                 display: flex;
                 flex-direction: column;
                 position: absolute;
-                top: 200px;
+                top: 170px;
                 right: 0;
-                width: 30%;
-                height: 50%;
-                
+                width: 300px;
+                height: 70%;
                 gap: 30px;
-                background: #ad1010;
+                background: aqua;
+                z-index: 99;
+                opacity: 70%;
             
               }
             
@@ -114,7 +115,8 @@
         }
         
         .hamburger{
-            visibility: visible ; /* Show the hamburger button on mobile view */
+            visibility: visible ;
+            padding: 10px; /* Show the hamburger button on mobile view */
             svg{
                 width: 25px;
                 height: 25px;

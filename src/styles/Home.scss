@@ -1,3 +1,36 @@
+@keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes fadeInDown {
+    0% {
+      opacity: 0;
+      transform: translateY(-50px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes fadeInRight {
+    0% {
+      opacity: 0;
+      transform: translateX(50px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
 .hero-container {
   padding-top: 70px;
   display: grid;
@@ -5,6 +38,7 @@
   .hero-left-section {
     display: grid;
     grid-template-rows: 2fr 1.5fr 1fr 1fr;
+    animation: fadeInUp 1.3s ease;
     .main-content {
       font-size: 50px;
       font-weight: bold;
@@ -58,6 +92,7 @@
     .left-img {
       display: grid;
       place-content: center;
+      animation: fadeInDown 1.3s ease;
       img {
         object-fit: contain;
         width: 300px;
@@ -78,6 +113,10 @@
       }
       .right-img1 {
         margin-top: 10px;
+        animation: fadeInRight 1.7s ease;
+      }
+      .right-img2{
+        animation: fadeInRight 1s ease;
       }
     }
   }
@@ -91,6 +130,7 @@
   .content-heading {
     display: grid;
     place-content: center;
+    animation: fadeInUp 1.3s ease;
     .grid-center {
       display: grid;
       place-content: center;
@@ -206,9 +246,11 @@
   gap: 20px;
   .service-card {
     padding: 10px;
+    animation: fadeInRight 1.7s ease;
     .heading {
       font-size: 18px;
       font-weight: bold;
+      
     }
     .description-service {
       color: white;
@@ -280,6 +322,7 @@
   .doctor-heading {
     display: grid;
     place-content: center;
+    animation: fadeInRight 1.7s ease;
     .grid-center {
       display: grid;
       place-content: center;
@@ -305,6 +348,7 @@
     gap: 30px 0;
     .doctor-card {
       padding: 10px;
+      animation: fadeInUp 1.3s ease;
       .doctor-img {
         overflow: hidden;
         border-radius: 2rem;
@@ -360,6 +404,7 @@
     .faq-img{
         display: grid;
         place-content: center;
+        animation: fadeInRight 1.7s ease;
         img{
             width: 350px;
             height: 400px;
@@ -373,6 +418,7 @@
             padding: 20px 10px;
         }
         .faq-item{
+            animation: fadeInUp 1.3s ease;
             padding: 10px;
             margin: 10px 0;
             border: 1px solid black;

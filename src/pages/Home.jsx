@@ -1,4 +1,4 @@
-import React , {useState}from 'react'
+import React , {useState, useRef}from 'react'
 import doctor6 from "../assets/images/doctor6.jpeg"
 import doctor3 from "../assets/images/doctor3.jpeg"
 import doctor4 from "../assets/images/doctor4.jpeg"
@@ -9,17 +9,24 @@ import faqdoctor from "../assets/images/faqdoctor.jpeg"
 import "../styles/Home.scss"
 import {  FaArrowAltCircleRight } from 'react-icons/fa'
 import About from '../components/about/About'
-import ServicesList from '../components/services/ServicesList'
 import Feature from '../components/feature/Feature'
 import DoctorList from '../components/doctors/DoctorList'
 import faqData from "../json/faqData.js"
+import Services from './Services'
+import Doctors from './Doctors'
+import Faq from './Faq'
 
 const Home = () => {
-    const [activeId, setActiveId] = useState(null);
+    const targetElementRef = useRef();
 
-    const handleQuestionClick = (id) => {
-      setActiveId(id === activeId ? null : id);
-    };
+    const handleButtonClick = () => {
+        // Scroll to the target element
+        targetElementRef.current.scrollIntoView({
+          behavior: 'smooth', // You can change this to 'auto' for instant scrolling
+          block: 'start',     // This will ensure the target element appears at the top of the viewport
+          inline: 'nearest'   // This will make sure the element is brought into view in its own container
+        });
+      };
   
   return (
     <>
@@ -35,7 +42,7 @@ const Home = () => {
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate similique cumque debitis velit totam eius amet, officia tenetur ratione dolores, sit, atque possimus eos quos soluta veniam dicta eligendi dolor vitae nemo tempora cum!</p>
                </div>
                <div className="btn-section">
-                <button>Request an Appointment</button>
+                <button onClick={handleButtonClick}>Medical services</button>
                </div>
                <div className="three-boxes">
                 <div className="box1">
@@ -64,7 +71,7 @@ const Home = () => {
             </div>
         </div>
     </section>
-    <div className="hero-content-section">
+    <div ref={targetElementRef} className="hero-content-section">
         <div className="content-container">
             <div className="content-heading">
                 <div className='grid-center'>
@@ -100,62 +107,12 @@ const Home = () => {
         </div>
     </div>
     <About/>
-    <div className="service-section">
-        <div className="content-container">
-        <div className="content-heading">
-                <div className='grid-center'>
-
-                <h2>Our medical services</h2>
-                </div>
-                <p className='para-content-section'>World class care for everyone. Our health system offerd unmatched,
-                    expert health care.
-                </p>
-            </div>
-            <ServicesList/>
-
-        </div>
-    
-    </div>
+   <Services/>
     <section className="feature">
-        <Feature/>
+    <Feature/>
     </section>
-    <section>
-        <div className="doctor-container">
-
-    <div className="doctor-heading">
-                <div className='grid-center'>
-
-                <h2>Our great Doctors</h2>
-                </div>
-                <p className='para-doctor-section'>World class care for everyone. Our health system offerd unmatched,
-                    expert health care.
-                </p>
-            </div>
-            <DoctorList/>
-
-        </div>
-    </section>
-    <section>
-        <div className="faq-section">
-            <div className="faq-img">
-                <img src={faqdoctor} alt="" />
-            </div>
-            <div className="faq-question-section">
-            <h2>Frequently Asked Questions</h2>
-      {faqData.map((faq) => (
-        <div key={faq.id} className="faq-item">
-          <div
-            className={`question ${faq.id === activeId ? "active" : ""}`}
-            onClick={() => handleQuestionClick(faq.id)}
-          >
-            {faq.question}
-          </div>
-          {faq.id === activeId && <div className="answer">{faq.answer}</div>}
-        </div>
-      ))}
-            </div>
-        </div>
-    </section>
+    <Doctors/>
+    <Faq/>
     </>
   )
 }

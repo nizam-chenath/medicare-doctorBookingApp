@@ -1,0 +1,48 @@
+.footer{
+    padding: 10px 100px;
+    display: grid;
+    grid-template-columns: 1fr 0.8fr;
+    .footer-right{
+        .logo{
+            img{
+                width: 80px;
+            }
+        }
+        .content{
+            font-size: 12px;
+            
+            padding: 5px 0;
+        }
+        .social-links{
+            padding:  10px 0 ;
+            max-width: 250px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            .links{
+                width: 40px;
+                height: 40px;
+                border: 1px solid black;
+                border-radius: 50%;
+                /* position: relative; */
+                display: grid;
+                place-content: center;
+                transition: 0.8s ease;
+                a{
+                    text-decoration: none;
+                    color: black;
+                }
+                
+                svg{
+                    width: 30px;
+                    height: 25px;
+                }
+            }
+            .links:hover{
+                transform: scale(1.2);
+                background: #0066cc;
+                color: white;
+                border:none;
+            }
+        }
+    }
+}
