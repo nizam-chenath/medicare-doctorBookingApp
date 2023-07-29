@@ -126,3 +126,14 @@
     }
    
 }
+
+@media(max-width: 564px){
+    .nav-container {
+        
+        grid-template-columns: 2fr 1fr 0.5fr 0.5fr 0.4fr;
+      .logo-img{
+        
+        justify-content: center;
+      }
+    }  
+}

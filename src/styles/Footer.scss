@@ -46,3 +46,13 @@
         }
     }
 }
+@media(max-width: 1024px) {
+    .footer{
+        padding: 10px;
+    }
+}
+@media(max-width:564px){
+    .footer{
+        grid-template-columns: 1fr 0.1fr;
+    }
+}

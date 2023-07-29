@@ -12,3 +12,16 @@ body{
   padding: 30px 50px;
   scroll-behavior: smooth;
 }
+body::-webkit-scrollbar {
+  width: 3px; /* Set the width of the scrollbar track */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #0066cc; /* Set the scrollbar thumb color to transparent */
+}
+
+@media(max-width: 564px){
+  body{
+    padding: 30px 10px;
+  }
+}

@@ -31,6 +31,7 @@ const Header = () => {
 
     const handleNavClick = (index) =>{
         setActiveNav(index)
+        setMobileNavOpen(false)
     }
     const [isMobileNavOpen, setMobileNavOpen] = useState(false);
 
@@ -58,12 +59,7 @@ const Header = () => {
                     <img src={profile} alt="profile" />
                     </Link>
                 </div>
-                <div className="login-btn">
-                    <Link to="/login">
-
-                    <button>Login</button>
-                    </Link>
-                </div>
+              
                 <div className="hamburger" onClick={toggleMobileNav}>
                     {isMobileNavOpen ? <RxCrossCircled/> : <FaBars/>}
                 

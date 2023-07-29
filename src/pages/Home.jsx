@@ -1,23 +1,25 @@
-import React , {useState, useRef}from 'react'
+import React , { useRef}from 'react'
 import doctor6 from "../assets/images/doctor6.jpeg"
 import doctor3 from "../assets/images/doctor3.jpeg"
 import doctor4 from "../assets/images/doctor4.jpeg"
 import doctor from "../assets/images/doctor.png"
 import search from "../assets/images/search.png"
 import booking from "../assets/images/booking.png"
-import faqdoctor from "../assets/images/faqdoctor.jpeg"
 import "../styles/Home.scss"
 import {  FaArrowAltCircleRight } from 'react-icons/fa'
 import About from '../components/about/About'
 import Feature from '../components/feature/Feature'
-import DoctorList from '../components/doctors/DoctorList'
-import faqData from "../json/faqData.js"
+import gsap from "gsap"
 import Services from './Services'
 import Doctors from './Doctors'
 import Faq from './Faq'
 
+
 const Home = () => {
     const targetElementRef = useRef();
+
+    
+  
 
     const handleButtonClick = () => {
         // Scroll to the target element
@@ -71,7 +73,7 @@ const Home = () => {
             </div>
         </div>
     </section>
-    <div ref={targetElementRef} className="hero-content-section">
+    <div  ref={targetElementRef} className="hero-content-section">
         <div className="content-container">
             <div className="content-heading">
                 <div className='grid-center'>
@@ -106,9 +108,12 @@ const Home = () => {
             </div>
         </div>
     </div>
+    <div  className='section1'>
+
     <About/>
+    </div>
    <Services/>
-    <section className="feature">
+    <section  className="feature section2">
     <Feature/>
     </section>
     <Doctors/>
